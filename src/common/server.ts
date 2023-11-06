@@ -15,6 +15,7 @@ export class Server<ConfigType> {
 
   /**
    * @param {number} port
+   * @param {srcPath} path most of the time you should use __dirname
    */
   async run(port: number, srcPath: string) {
     Server.app.use(express.json());

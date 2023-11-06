@@ -1,6 +1,6 @@
 import { Service } from "typedi";
 
-type AppConfiguration = {
+export type AppConfiguration = {
   port: number;
   database: {
     username: string;

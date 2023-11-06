@@ -7,7 +7,7 @@
     "build"
   ],
   "scripts": {
-    "start": "npm run build && node build/index.js",
+    "start": "npm run build &&  node build/index.js",
     "build": "tsc",
     "start:dev": "npx nodemon",
     "publish": "rm -rf build && npm run build"

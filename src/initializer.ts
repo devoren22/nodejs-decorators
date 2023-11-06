@@ -18,7 +18,7 @@ export async function initControllersAndGateways({ dir }: { dir: string }) {
 
       if (isSocketGateway) console.log({ gateway: filePath });
 
-      await import(filePath);
+      if (isController || isSocketGateway) await import(filePath);
     }
   }
 }
